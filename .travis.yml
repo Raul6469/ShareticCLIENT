@@ -15,10 +15,9 @@ install:
 
 script:
 - ng lint
-- ng test --watch false
+- ng test -cc --watch false
 
 after_success:
-- ng test -cc --watch false
 - bash <(curl -s https://codecov.io/bash)
 
 addons:
